@@ -2,7 +2,7 @@
 // Difficulty: Easy
 // Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/?envType=study-plan-v2&envId=top-interview-150/
 
-class Solution {
+class LC121 {
     public int maxProfit(int[] prices) {
         int min = Integer.MAX_VALUE;
         int max = 0;
@@ -16,7 +16,6 @@ class Solution {
                 max = prices[i] - min;
             }
         }
-
         return max;
     }
 }

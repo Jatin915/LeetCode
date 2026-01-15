@@ -2,7 +2,7 @@
 // Difficulty: Easy
 // Link: https://leetcode.com/problems/richest-customer-wealth/
 
-class Solution {
+class LC1672 {
     public int maximumWealth(int[][] accounts) {
         int sum=0, store=0;
         for(int i=0; i<accounts.length; i++){
@@ -11,7 +11,7 @@ class Solution {
             }
             if(store > sum)
                 sum=store;
-                store=0;
+            store=0;
         }
         return sum;   
     }

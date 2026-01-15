@@ -3,7 +3,7 @@
 // Link: https://leetcode.com/problems/merge-sorted-array/?envType=study-plan-v2&envId=top-interview-150
 
 import java.util.Arrays;
-class Solution {
+class LC88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         
         for(int i=0; i<n; i++) {

@@ -2,8 +2,7 @@
 // Difficulty: Medium
 // Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150/
 
-
-class Solution {
+class LC80 {
     public int removeDuplicates(int[] nums) {
         int Len=nums.length-1; int count=1;
         for(int i=0; i<Len; i++){

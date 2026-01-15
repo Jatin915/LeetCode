@@ -2,12 +2,11 @@
 // Difficulty: Easy
 // Link: https://leetcode.com/problems/majority-element/?envType=study-plan-v2&envId=top-interview-150/
 
-
-class Solution {
+class LC169 {
     public int majorityElement(int[] nums) {
         int count=1; int ans=1; int index=-1;
         int Len=nums.length-1;
-        
+
         if(Len == 0)
             return nums[0];
         
@@ -26,6 +25,5 @@ class Solution {
             count=1;
         }
         return index;
-
     }
 }

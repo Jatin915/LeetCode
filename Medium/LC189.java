@@ -3,7 +3,7 @@
 // Link: https://leetcode.com/problems/rotate-array/?envType=study-plan-v2&envId=top-interview-150/
 
 import java.util.Arrays;
-class Solution {
+class LC189 {
     public void rotate(int[] nums, int k) {
         int n=nums.length;
 
