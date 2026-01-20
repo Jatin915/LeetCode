@@ -2,7 +2,7 @@
 // Difficulty: Hard
 // Link: https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 
-// import java.util.Arrays;
+import java.util.Arrays;
 class LC04 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
