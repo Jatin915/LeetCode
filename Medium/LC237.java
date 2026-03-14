@@ -3,13 +3,13 @@
 // Link: https://leetcode.com/problems/delete-node-in-a-linked-list/description/
 
 
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
     ListNode(int x) { val = x; }
 }
 
-class LC237 {
+public class LC237 {
     public void deleteNode(ListNode node) {
         node.val = node.next.val;
         node.next = node.next.next;
