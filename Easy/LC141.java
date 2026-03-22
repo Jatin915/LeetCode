@@ -13,7 +13,7 @@
  *     }
  * }
  */
-public class Solution {
+public class LC141 {
     public boolean hasCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
