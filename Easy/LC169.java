@@ -2,11 +2,13 @@
 // Difficulty: Easy
 // Link: https://leetcode.com/problems/majority-element/?envType=study-plan-v2&envId=top-interview-150/
 
+import java.util.HashMap;
+
 class LC169 {
     public int majorityElement(int[] nums) {
         int count=1; int ans=1; int index=-1;
         int Len=nums.length-1;
-
+        
         if(Len == 0)
             return nums[0];
         
@@ -25,5 +27,27 @@ class LC169 {
             count=1;
         }
         return index;
+    }
+}
+
+
+// HashMap solution
+class Solution {
+    public int majorityElement(int[] nums) {
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        int n = nums.length;
+
+        for(int num : nums) {
+
+            map.put(num, map.getOrDefault(num, 0) + 1);
+
+            if(map.get(num) > n / 2) {
+                return num;
+            }
+        }
+
+        return -1;
     }
 }
